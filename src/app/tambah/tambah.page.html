@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+    <ion-icon name="add-circle"></ion-icon>
+      Tambah Produk
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   <ion-item>
+            <ion-input name="name" type="text"  placeholder="Judul Game" ngModel required></ion-input>
+   </ion-item>
+   <ion-item>
+    <ion-input name="name" type="int"  placeholder="Harga" ngModel required></ion-input>
+</ion-item>
+   <ion-item>
+          <ion-label>Jenis Game</ion-label>
+          <ion-select>
+            <ion-select-option>PS4</ion-select-option>
+            <ion-select-option>XboxOne</ion-select-option>
+            <ion-select-option>Nintendo</ion-select-option>
+            <ion-select-option>Sega</ion-select-option>
+            <ion-select-option>PC</ion-select-option>
+          </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Genre</ion-label>
+      <ion-select multiple="true">
+        <ion-select-option value="Action">Action</ion-select-option>
+        <ion-select-option value="Fighting">Fighting</ion-select-option>
+        <ion-select-option value="RPG">RPG</ion-select-option>
+        <ion-select-option value="FPS">FPS</ion-select-option>
+        <ion-select-option value="Adventure">Adventure</ion-select-option>
+        <ion-select-option value="RTS">RTS</ion-select-option>
+        <ion-select-option value="Sandbox">Sandbox</ion-select-option>
+      </ion-select>
+</ion-item>
+<ion-item>
+  <ion-label>Pemakaian</ion-label>
+  <ion-select interface="popover" value="Baru">
+    <ion-select-option value="Baru" selected>Baru</ion-select-option>
+    <ion-select-option value="Bekas">Bekas</ion-select-option>
+  </ion-select>
+</ion-item>
+	<ion-item>
+          <ion-label>Tanggal Rilis</ion-label>
+          <ion-datetime value="2000-01-01" displayFormat="DD MMM YYYY" placeholder="Select Date"></ion-datetime>
+        </ion-item>
+	<ion-item>
+			<ion-label position="floating">Catatan</ion-label>
+			<ion-textarea></ion-textarea>
+  </ion-item>
+  <ion-button expand="block">Tambah</ion-button>
+</ion-content>

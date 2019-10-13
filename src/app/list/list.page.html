@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+<div text-center>
+    <ion-title>
+	<ion-icon color="medium" name="md-filing"></ion-icon>
+	 <ion-label> List</ion-label>
+	 </ion-title>
+</div>
+<br>
+<ion-item (click)="pop()">
+  <ion-icon name="logo-octocat"></ion-icon>
+    <ion-label class="ion-text-center">Popular Game</ion-label>
+  <ion-icon name="logo-octocat"></ion-icon>
+</ion-item>
+<ion-item (click)="pop()">
+  <ion-icon name="apps"></ion-icon>
+    <ion-label class="ion-text-center">Genre</ion-label>
+  <ion-icon name="apps"></ion-icon>
+</ion-item>
+<ion-item (click)="pop()">
+<ion-icon name="logo-playstation"></ion-icon>
+    <ion-label class="ion-text-center">PS4</ion-label>
+<ion-icon name="logo-playstation"></ion-icon>
+</ion-item>
+<ion-item (click)="pop()">
+  <ion-icon name="logo-game-controller-a"></ion-icon>
+    <ion-label class="ion-text-center">Nintendo</ion-label>
+  <ion-icon name="logo-game-controller-a"></ion-icon>
+</ion-item>
+<ion-item (click)="pop()">
+  <ion-icon name="logo-xbox"></ion-icon>
+    <ion-label class="ion-text-center">XboxOne</ion-label>
+  <ion-icon name="logo-xbox"></ion-icon>
+</ion-item>
+</ion-list>
+</ion-content>
