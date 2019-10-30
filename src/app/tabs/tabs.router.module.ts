@@ -7,6 +7,8 @@ const routes: Routes = [
     path: 'tabs',
     component: TabsPage,
     children: [
+      { path: 'tab3', loadChildren: '/tabs/tab3/tab3.module#Tab3PageModule' },
+      { path: 'cart', loadChildren: '/tabs/cart/cart.module#CartPageModule' },
       {
         path: 'tab1',
         children: [
@@ -78,17 +80,27 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'comment',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../comment/comment.module').then(m => m.CommentPageModule)
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
-      }
+      },
     ]
   },
   {
     path: '',
     redirectTo: '/tabs/tab1',
     pathMatch: 'full'
-  }
+  },
 ];
 
 @NgModule({

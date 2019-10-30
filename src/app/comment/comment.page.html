@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Comment
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let item of commentsData">
+    <ion-title>
+        {{ item.name }}
+    </ion-title>
+    <ion-title size="small">
+        {{ item.email }}
+    </ion-title>
+      <ion-card>
+        <ion-card-content>
+          {{ item.body }}
+        </ion-card-content>
+      </ion-card>
+  </ion-list>
+   
+  </ion-content>
